@@ -1,0 +1,42 @@
+@import url(https://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+
+:root {
+  --fc-accent: rgb(123, 70, 255);
+  --fc-accent-hover: rgb(127, 107, 178);
+  --fc-normal: rgb(59, 59, 59);
+  --fc-light: rgb(117, 117, 117);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px 4px rgb(157, 157, 157);
+    border-radius: 0.5rem;
+    font-family: "COCOGOOSE"
+}
+
+
+
+.quote {
+    color: var(--fc-accent);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.child {
+    font-size: 1.2rem;
+    color: rgb(100, 100, 100);
+}
+
+.review {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.reviewer {
+    color: var(--fc-accent);
+    font-weight: bold;
+}
+

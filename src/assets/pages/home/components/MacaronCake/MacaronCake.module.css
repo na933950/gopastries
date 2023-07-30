@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2em;
+    padding: 2em;
+    position: relative;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+}
+
+@media (max-width: 786px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.graphicsContainer {
+    position: relative;
+}
+
+.macaron {
+    position: absolute;
+    height: 12%;
+}
+
+.macaronCake {
+    position: absolute;
+    height: auto; /* Maintain aspect ratio */
+    height: 50%; /* Set the width to 80% of the graphics container */
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Center the image within its box using auto margins */
+}

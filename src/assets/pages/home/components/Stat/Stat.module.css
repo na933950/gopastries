@@ -1,0 +1,57 @@
+/* Stat.module.css */
+@import url(https://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+
+/* Add keyframes for fade-in and move-up animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in and move-up animations to the .statContainer */
+.statContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 0.5s ease, moveUp 0.5s ease; /* Add animations */
+  animation-fill-mode: both; /* Keep the styles after animation */
+}
+
+/* .statValue and .statName styles remain the same */
+.statValue {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  font-family: "COCOGOOSE";
+  color: rgb(113, 57, 255);
+}
+
+.statName {
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fadingContainer {
+display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 0.5s ease, moveUp 0.5s ease; /* Add animations */
+  animation-fill-mode: both; /* Keep the styles after animation */
+}

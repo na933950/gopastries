@@ -1,0 +1,30 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .timeline {
+        width: 70%;
+    }
+}
+
+@media (max-width: 786px) {
+    .timeline {
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    .timeline {
+        width: 90%;
+    }
+}

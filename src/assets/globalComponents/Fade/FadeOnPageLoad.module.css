@@ -1,0 +1,19 @@
+.fade {
+    animation-duration: 0.8s;
+    animation-name: fade;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translate(40px);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

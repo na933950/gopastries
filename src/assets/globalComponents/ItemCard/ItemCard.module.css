@@ -1,0 +1,104 @@
+@import url(https://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+
+:root {
+  --fc-accent: rgb(123, 70, 255);
+  --fc-accent-hover: rgb(127, 107, 178);
+  --fc-normal: rgb(59, 59, 59);
+  --fc-light: rgb(117, 117, 117);
+}
+
+picture,
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.flexGroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product {
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
+  display: grid;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px 4px rgb(170, 170, 170);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 100%;
+}
+
+.productContent {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: var(--content-padding);
+  display: grid;
+  gap: var(--content-spacing);
+  color: var(--fc-light);
+}
+
+.category {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 0.8125rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--fc-light);
+  font-weight: bold;
+}
+
+.productTitle {
+  font-size: 2rem;
+  font-family: "COCOGOOSE";
+  color: var(--fc-normal);
+  line-height: 1.3;
+}
+
+.productPrice {
+    font-size: 2rem;
+    color: var(--fc-accent);
+    font-family: "COCOGOOSE";
+}
+
+.originalPrice {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--fc-light);
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.75em 1.5em;
+    background-color: var(--fc-accent);
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.925rem;
+}
+
+.button:is(:hover, :focus) {
+    background-color: var(--fc-accent-hover);
+}
+
+.productGridSmall {
+    grid-template-columns: 1fr;
+  }
+  
+  .productGridLarge {
+    grid-template-columns: 1fr 1fr;
+  }
+  

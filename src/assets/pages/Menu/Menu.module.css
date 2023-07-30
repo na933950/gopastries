@@ -1,0 +1,83 @@
+@import url(https://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+
+:root {
+  --fc-accent: rgb(123, 70, 255);
+  --fc-accent-light: rgb(172, 139, 255);
+}
+
+.headerContainer {
+  width: 100%;
+  position: relative;
+  font-family: "COCOGOOSE";
+  color: var(--fc-accent);
+  padding-top: 120px;
+  font-size: 2.5rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2%;
+  background-image: linear-gradient(
+      to bottom right,
+      white 0%,
+      transparent 20%,
+      rgb(255, 153, 255)
+    ),
+    linear-gradient(
+      to bottom left,
+      white 0%,
+      transparent 20%,
+      rgb(126, 221, 255) 80%
+    );
+  padding-bottom: calc(120px + 2%);
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.select {
+  border: 3px solid var(--fc-accent-light);
+  background-color: white;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.select:focus {
+  border: 3px solid var(--fc-accent);
+}
+
+.select option:hover {
+  background-color: white;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 4%;
+    padding-bottom: calc(120px + 4%);
+  }
+  .filterContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 6%;
+    padding-bottom: calc(120px + 6%);
+  }
+}

@@ -1,0 +1,164 @@
+/* MenuItems.module.css */
+
+.collapsibleContainer {
+  overflow: hidden;
+  --mask: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 95%,
+      rgba(0, 0, 0, 0) 0
+    )
+    100% 10% / 100% 100% repeat-x;
+
+}
+
+
+.testimonialContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: visible;
+  padding: 2%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.container {
+  position: relative;
+  padding-bottom: calc(120px + 2%);
+  background-image: linear-gradient(
+      to bottom right,
+      white 0%,
+      transparent 20%,
+      rgb(255, 175, 255)
+    ),
+    linear-gradient(
+      to bottom left,
+      white 0%,
+      transparent 20%,
+      rgb(124, 220, 255) 80%
+    );
+  padding-top: 100px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 4%;
+    padding-bottom: calc(120px + 4%);
+    padding-top: 100px;
+  }
+  .filterContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 6%;
+    padding-bottom: calc(120px + 6%);
+    padding-top: 100px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 40px;
+  padding-right: 1rem;
+  padding: 2%;
+}
+
+.page {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--fc-light);
+  font-weight: bold;
+}
+
+.header {
+  font-size: 2.5rem;
+  color: var(--fc-accent);
+  font-family: "COCOGOOSE";
+}
+
+.paragraph {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-width: 3px;
+  border-color: var(--fc-accent);
+  position: relative;
+  font-family: "COCOGOOSE";
+}
+
+.toggle {
+  color: var(--fc-accent);
+  font-size: 3rem;
+  animation-name: toggle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transition: 0.3s;
+}
+
+.toggle:hover {
+  color: var(--fc-accent-hover);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@keyframes toggle {
+  0% {
+    transform: translateY(0px);
+  }
+  8% {
+    transform: translateY(20px);
+  }
+  16% {
+    transform: translateY(0px);
+  }
+  24% {
+    transform: translateY(0px);
+  }
+  32% {
+    transform: translateY(20px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.toggleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnContainer {
+  width: 200px;
+}
