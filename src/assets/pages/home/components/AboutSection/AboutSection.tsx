@@ -11,19 +11,19 @@ const AboutSection = () => {
       <span className={styles.header}>ABOUT ME</span>
       <Fade>
         <div className={styles.stats}>
-          <Stat className={styles.stat} statValue={7}>
+          <Stat className={styles.stat} statValue={8}>
             Months in Business
           </Stat>
           <Stat
             className={styles.stat}
-            statValue={1000}
+            statValue={2500}
             suffix="+"
-            duration={1.5}
+            duration={3.3}
           >
             Macarons Baked
           </Stat>
-          <Stat className={styles.stat} statValue={15} suffix="+">
-            Products
+          <Stat className={styles.stat} statValue={160} suffix="+" duration={3}>
+            Orders
           </Stat>
         </div>
       </Fade>
@@ -31,9 +31,9 @@ const AboutSection = () => {
         <div className={styles.textWrapper}>
           <Fade>
             <span className={styles.text}>
-              GoPastries is a home-run bakery that started out of a passion for
-              baking in December 2022! We offer wide selection of unique
-              products such as macaron cakes, or macaron trees
+              GoPastries is a Board-of-Health-certified, Residential Kitchen
+              bakery, that started out of a passion for baking in December 2022!
+              I offer wide selection of customizable, unique products.
             </span>
           </Fade>
         </div>
@@ -45,7 +45,7 @@ const AboutSection = () => {
               </Link>
             </Tilt>
             <Tilt tiltReverse={true} tiltMaxAngleX={20} tiltMaxAngleY={20}>
-              <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfMXfDq0Eeo-8i81cBC5SCiqRa58fcHZJ19w5_NwWIawPS_XQ/viewform?pli=1">
+              <Link onClick={scrollToTop} to="/about">
                 <button className={styles.aboutButton}>Learn More</button>
               </Link>
             </Tilt>

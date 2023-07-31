@@ -7,7 +7,7 @@
     height: 100px;
     width: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
@@ -84,19 +84,52 @@
     box-shadow: rgb(127, 127, 127) 0px 0px 10px 3px;
   }
 
-  .dropdownMenuUL {
+  .dropdownMenuLinks {
     list-style: none;
-    width: 100%;
-    height: auto;
     background-color: #ffffff;
+    width: 100%;
     position: absolute;
+    margin-top: 1.5em;
     left: 0%;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --link-border: 2px solid rgb(227, 227, 227);
   }
   
+  .navLinkItem {
+    text-decoration: none;
+    width: 90%;
+    font-size: 2rem;
+    color: black;
+    padding: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: var(--link-border);
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topLink {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top: var(--link-border);
+  }
+
+  .bottomLink {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .navIcon {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
   .dropdownLink {
     text-decoration: none;
-    font-size: 1.5em;
     color: black;
   }
 
@@ -114,13 +147,13 @@
   .dropdownClose {
     background-color: transparent;
     border: none;
-    font-size: 40px;
+    font-size: 3em;
   }
 
   .dropdownCloseContainer {
     width: 50%;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 2em;
   }
 
   .logoDropdownContainer {
@@ -130,8 +163,28 @@
   }
   
   .logoDropdown {
-    width: 80px;
-    height: auto;
+    width: auto;
+    height: 120px;
+  }
+
+  @media (max-width: 550px) {
+    .navLinkItem {
+      font-size: 1.3rem;
+      padding: 1rem;
+    }
+
+    .navIcon {
+      font-size: 1.7rem;
+    }
+
+    .logoDropdown {
+      width: auto;
+      height: 65px;
+    }
+
+    .dropdownClose {
+      font-size: 2rem;
+    }
   }
 
   .overlay {

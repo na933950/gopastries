@@ -15,7 +15,8 @@
 
   .header {
     background-color: white;
-    font-family: "COCOGOOSE";
+    font-family: var(--font-accent);
+    font-weight: bold;
     font-size: 2.5rem;
     display: flex;
     text-align: center;
@@ -82,7 +83,7 @@
     justify-content: center;
     z-index: 20;
     flex-direction: column;
-    font-family: "COCOGOOSE";
+    font-family: var(--font-accent);
   }
 
 

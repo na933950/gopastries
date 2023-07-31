@@ -1,5 +1,4 @@
 /* Stat.module.css */
-@import url(https://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
 
 /* Add keyframes for fade-in and move-up animations */
 @keyframes fadeIn {
@@ -36,7 +35,8 @@
 .statValue {
   font-size: 2.5rem;
   padding-bottom: 10px;
-  font-family: "COCOGOOSE";
+  font-family: var(--font-accent);
+  font-weight: bold;
   color: rgb(113, 57, 255);
 }
 

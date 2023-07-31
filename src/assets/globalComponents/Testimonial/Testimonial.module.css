@@ -1,10 +1,9 @@
-@import url(https://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
-
 :root {
   --fc-accent: rgb(123, 70, 255);
   --fc-accent-hover: rgb(127, 107, 178);
   --fc-normal: rgb(59, 59, 59);
   --fc-light: rgb(117, 117, 117);
+  --font-accent: 'Secular One', sans-serif;
 }
 
 .container {
@@ -15,7 +14,7 @@
     background-color: white;
     box-shadow: 0px 0px 10px 4px rgb(157, 157, 157);
     border-radius: 0.5rem;
-    font-family: "COCOGOOSE"
+    font-family: var(--font-accent);
 }
 
 

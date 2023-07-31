@@ -81,13 +81,10 @@ const TiWebsiteRevamped = {
 };
 
 const timelineItems = [
-  TiFirstMacaron,
-  TiLaunchedBusiness,
   TiFirstNumberCake,
   TiFirstFlowerBouquet,
   TiTedXEvent,
   TiNursesDay,
-  TiPrideMonth,
   TiWedding,
   TiWebsiteRevamped,
 ];

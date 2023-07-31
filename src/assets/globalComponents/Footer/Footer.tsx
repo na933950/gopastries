@@ -1,8 +1,13 @@
 import styles from "./Footer.module.css";
 import logo from "../../images/gopastrieslogo.png";
 
+interface PageInfo {
+  path: string;
+  icon: React.ReactNode;
+}
+
 interface PageDirectory {
-  [key: string]: string;
+  [key: string]: PageInfo;
 }
 
 interface Props {
@@ -17,20 +22,39 @@ const Footer = ({ pages }: Props) => {
           <img className={styles.logo} src={logo} />
         </div>
         <p className={styles.description}>
-          GoPastries is a home-run bakery based out of Natick, MA 01760. <br />
-          Feel free to call me at 508-904-1038 with any questions!
+          GoPastries is a Board-of-Health-certified, Residential Kitchen bakery
+          in Natick, MA, that started out of a passion for baking in December
+          2022! I offer wide selection of customizable products.
+          Feel free to call me at (857) 400-0545 with any questions!
         </p>
         <a href="mailto:gopastries@gmail.com" className={styles.email}>
           gopastries@gmail.com
         </a>
       </div>
-
       <div className={styles.linksContainer}>
-        {Object.keys(pages).map((page) => (
-          <a className={styles.link} href={pages[page]}>
-            {page}
+        <div className={styles.pagesContainer}>
+          <p className={styles.linkHeader}>Pages</p>
+          {Object.keys(pages).map((page) => (
+            <a className={styles.link} href={pages[page].path}>
+              {page}
+            </a>
+          ))}
+        </div>
+        <div className={styles.mediaContainer}>
+          <p className={styles.linkHeader}>Social</p>
+          <a
+            className={styles.link}
+            href="https://www.instagram.com/gopastries/?igshid=MzRlODBiNWFlZA%3D%3D"
+          >
+            Instagram
           </a>
-        ))}
+          <a
+            className={styles.link}
+            href="https://www.facebook.com/profile.php?id=100087416521769&paipv=0&eav=Afam0tvjx1Fghu2ijzF_3W3mU1B0IW7N96kmb8-os00pbWaHAAVFTODvukZkTubsrbs&_rdr"
+          >
+            Facebook
+          </a>
+        </div>
       </div>
     </div>
   );

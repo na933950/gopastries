@@ -1,4 +1,7 @@
 /* MenuItems.module.css */
+:root {
+  --font-accent: 'Secular One', sans-serif;
+}
 
 .collapsibleContainer {
   overflow: hidden;
@@ -93,7 +96,8 @@
 .header {
   font-size: 2.5rem;
   color: var(--fc-accent);
-  font-family: "COCOGOOSE";
+  font-family: var(--font-accent);
+  font-weight: bold;
 }
 
 .paragraph {
@@ -110,7 +114,7 @@
   border-width: 3px;
   border-color: var(--fc-accent);
   position: relative;
-  font-family: "COCOGOOSE";
+  font-family: var(--font-accent);
 }
 
 .toggle {

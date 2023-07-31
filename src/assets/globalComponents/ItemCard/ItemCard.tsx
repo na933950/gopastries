@@ -13,6 +13,7 @@ export interface IcProps {
   price: string;
   formerPrice?: string;
   onPageLoad?: boolean;
+  onClick?: () => void;
 }
 
 const ItemCard = ({
@@ -24,6 +25,7 @@ const ItemCard = ({
   price,
   formerPrice,
   onPageLoad,
+  onClick,
 }: IcProps) => {
   const [cardWidth, setCardWidth] = useState(0);
 
@@ -74,6 +76,7 @@ const ItemCard = ({
           <Link
             to="https://docs.google.com/forms/d/e/1FAIpQLSfMXfDq0Eeo-8i81cBC5SCiqRa58fcHZJ19w5_NwWIawPS_XQ/viewform?pli=1"
             className={styles.button}
+            onClick={onClick}
           >
             <AiOutlineShoppingCart />
             Order

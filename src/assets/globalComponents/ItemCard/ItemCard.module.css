@@ -1,5 +1,3 @@
-@import url(https://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
-
 :root {
   --fc-accent: rgb(123, 70, 255);
   --fc-accent-hover: rgb(127, 107, 178);
@@ -35,6 +33,7 @@ img {
   border-radius: 0.5rem;
   overflow: hidden;
   height: 100%;
+  font-weight: bold;
 }
 
 .productContent {
@@ -56,7 +55,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 .productTitle {
   font-size: 2rem;
-  font-family: "COCOGOOSE";
+  font-family: var(--font-accent);
   color: var(--fc-normal);
   line-height: 1.3;
 }
@@ -64,7 +63,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .productPrice {
     font-size: 2rem;
     color: var(--fc-accent);
-    font-family: "COCOGOOSE";
+    font-family: var(--font-accent);
 }
 
 .originalPrice {

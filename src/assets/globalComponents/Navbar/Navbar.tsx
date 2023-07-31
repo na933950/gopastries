@@ -4,8 +4,13 @@ import logo from "../../images/gopastrieslogo.png";
 import { useSpring, animated } from "react-spring";
 import { Link } from "react-router-dom";
 
+interface PageInfo {
+  path: string;
+  icon: React.ReactNode;
+}
+
 interface PageDirectory {
-  [key: string]: string;
+  [key: string]: PageInfo;
 }
 
 interface Props {
@@ -82,9 +87,9 @@ const Navbar = ({ pages }: Props) => {
   const desktopNavbar = (
     <div className={styles.navLinkWrapper}>
       <ul className={styles.navLinks}>
-      {Object.keys(pages).map((page) => (
+        {Object.keys(pages).map((page) => (
           <li key={page}>
-            <Link to={pages[page]} className={styles.navLink}>
+            <Link to={pages[page].path} className={styles.navLink}>
               {page}
             </Link>
           </li>
@@ -123,15 +128,19 @@ const Navbar = ({ pages }: Props) => {
           </button>
         </div>
       </div>
-      <ul className={styles.dropdownMenuUL}>
-      {Object.keys(pages).map((page) => (
-          <li key={page} className={styles.navLinkItem}>
-            <Link to={pages[page]} className={styles.dropdownLink}>
+      <div className={styles.dropdownMenuLinks}>
+        {Object.keys(pages).map((page, index) => (
+          <p key={page} className={
+            [styles.navLinkItem, 
+            (index !== 0? "": styles.topLink), 
+            (index === Object.keys(pages).length - 1? styles.bottomLink: "")].join(" ")}>
+            <span className={styles.navIcon}>{pages[page].icon}</span>
+            <Link to={pages[page].path} className={styles.dropdownLink}>
               {page}
             </Link>
-          </li>
+          </p>
         ))}
-      </ul>
+      </div>
     </animated.div>
   );
 

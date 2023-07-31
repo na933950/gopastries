@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react';
 
 interface Props {
   allItems: IcProps[];
+  onClick?: () => void;
 }
 
-const MenuItems = ({ allItems }: Props) => {
+const MenuItems = ({ allItems, onClick }: Props) => {
   const firstBreakpoint = 1000;
   const secondBreakpoint = 786;
   const [width, setWidth] = useState(window.innerWidth);
@@ -43,7 +44,7 @@ const MenuItems = ({ allItems }: Props) => {
       {allItems
         .filter((_, index) => index % numColumns === columnIndex) // Filter items for each column based on index
         .map((item, index) => (
-          <ItemCard key={index} onPageLoad={index < 1} {...item} />
+          <ItemCard key={index} onPageLoad={index < 1} onClick={onClick} {...item} />
         ))}
     </div>
   ));

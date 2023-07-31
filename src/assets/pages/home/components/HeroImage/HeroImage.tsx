@@ -5,13 +5,18 @@ import OpacityDivider from "../../../../globalComponents/OpacityDivider";
 import Tilt from "react-parallax-tilt";
 import {
   pngMacaron,
-  pngMacaronCake,
   pngMatchaTower,
   pngCupcake,
+  pngMacaronBox,
+  pngBabySugarCookie
 } from "../../../../images/png";
 import { BiSolidDownArrow } from "react-icons/bi";
 import Fade from "../../../../globalComponents/Fade/Fade";
 import { Link } from "react-router-dom";
+
+interface BackendData {
+  users: string[]
+}
 
 const HeroImage = () => {
   const [text] = useTypewriter({
@@ -21,7 +26,7 @@ const HeroImage = () => {
     typeSpeed: 120,
   });
 
-  const images = [pngMacaron, pngMacaronCake, pngMatchaTower, pngCupcake];
+  const images = [pngMacaron, pngMacaronBox, pngMatchaTower, pngCupcake, pngBabySugarCookie];
   const [heroImageIndex, setHeroImageIndex] = useState(0);
 
   useEffect(() => {
@@ -57,6 +62,17 @@ const HeroImage = () => {
       behavior: "smooth",
     });
   };
+
+  const [backendData, setBackendData] = useState<BackendData>({ users: [""] });
+
+  useEffect(() => {
+    fetch("/api")
+      .then((response) => response.json())
+      .then((data) => {
+        setBackendData(data);
+      });
+    setBackendData(backendData)
+  }, []);
 
   return (
     <>

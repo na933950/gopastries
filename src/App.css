@@ -5,3 +5,11 @@ body {
 .navbar {
   overflow: hidden;
 }
+
+:root {
+  --font-accent: 'Secular One', sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+}

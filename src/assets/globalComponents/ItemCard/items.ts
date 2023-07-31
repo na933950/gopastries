@@ -35,7 +35,7 @@ const IcMacaron = {
   children:
     "My classic macarons have a light and airy texture, and the satisfying crispy shell that makes macarons such a unique item! With high customizability of flavor and color, they're my best seller!",
   price: "$36/dozen",
-  formerPrice: "$42/dozen",
+  formerPrice: "",
 };
 const IcMacaronTree = {
   imgWide: horizontalMacaronTree,
@@ -54,8 +54,8 @@ const IcMatcha = {
   title: "Matcha Cookies",
   children:
     "My matcha cookies are perfectly crispy and crumbly with a sweet and salty matcha flavor worked into the cookie. They will melt in your mouth and are sprinkled with sugar crystals to convey their elegant taste.",
-  price: "$30/dozen",
-  formerPrice: "$36/dozen",
+  price: "$36/dozen",
+  formerPrice: "",
 };
 const IcMacaronCake = {
   imgWide: horizontalMacaronCake,
@@ -65,7 +65,7 @@ const IcMacaronCake = {
   children:
     "A towering treat made with layers of fluffy macaron cookies and buttercream filling. It can be customized with different flavors and colors and is a perfect alternative to a normal cake if you want to spice things up and have a 'macaron to share.'",
   price: "$60",
-  formerPrice: "$80",
+  formerPrice: "",
 };
 const IcChai = {
   imgWide: horizontalChaiCookies,
@@ -73,9 +73,9 @@ const IcChai = {
   category: "cookie",
   title: "Chai Cookies",
   children:
-    "Perfectly spiced cookie with flavors of ginger, cinnamon, cardamom, nutmeg, and cloves. They are awesome during the holiday time.",
+    "Perfectly spiced cookie with flavors of ginger, cinnamon, cardamom, nutmeg, and cloves. They are awesome during the holiday time. Call me to discuss Vegan options please.",
   price: "$36/dozen",
-  formerPrice: "$42/dozen",
+  formerPrice: "",
 };
 const IcHazelnut = {
   imgWide: horizontalHazelnutCookies,
@@ -83,16 +83,17 @@ const IcHazelnut = {
   category: "cookie",
   title: "Hazelnut Cookies",
   children:
-    "Buttery hazelnut shortbread dipped in semi-sweet chocolate, sprinkled with roasted hazelnut pieces. These are a favorite from the 'cookie' category and crumble perfectly in your mouth!",
+    "Buttery hazelnut shortbread dipped in semi-sweet chocolate, sprinkled with roasted hazelnut pieces. These are a favorite from the 'cookie' category and crumble perfectly in your mouth! I have been making this since 1999! Call me to discuss Vegan options please.",
   price: "$36/dozen",
+  formerPrice: "",
 };
 const IcCupcake = {
   imgWide: horizontalCupcakes,
   imgTall: verticalCupcakes,
-  category: "bread",
+  category: "cupcake",
   title: "Cupcakes",
   children:
-    "A sweet, single-serving cake topped with rich frosting and sprinkles. My cupcakes are customizable across many frosting flavors and themes! They're great for any time of year.",
+    "A sweet, single-serving cake topped with rich frosting. My cupcakes are customizable across many frosting flavors and themes (with a chocolate or vanilla base)! They're great for any time of year.",
   price: "$42/dozen"
 };
 const IcCinnamonRoll = {
@@ -101,7 +102,7 @@ const IcCinnamonRoll = {
   category: "bread",
   title: "Cinnamon Rolls",
   children:
-    "Pillowy soft single serve rolls topped with cinnamon, made with a tangzhong starter for maximum softness. They are absolutely delicious as a morning snack or an afternoon desert.",
+    "Pillowy soft single serve rolls topped with cinnamon, made with a tangzhong starter for maximum softness. They are absolutely delicious as a breakfast item or afternoon snack.",
   price: "$42/dozen",
 }
 const IcJarOfHearts = {
@@ -119,7 +120,7 @@ const IcNumberCake = {
   category: "macaron",
   title: "Macaron Number Cake",
   children:
-    "If you loved our macaron cake or just wanted to give it a little bit more flare (perhaps for a birthday), try our beautifully decorated number macaron cake!",
+    "If a round macaron cake isn't enough and you are looking for something a little bit more special, or just want to give it a bit more flare, try my beautifully decorated number macaron cake!",
   price: "$150"
 };
 const IcParkerHouseRoll = {
@@ -128,9 +129,9 @@ const IcParkerHouseRoll = {
   category: "bread",
   title: "Honey Butter Salted Parker House Rolls",
   children:
-    "Soft, buttery rolls coated with a honey butter glaze and lightly sprinkled with salt. If you love my cinnamon rolls but would like a more savory delight, the Parker House Rolls are perfect for you!",
+    "Soft, buttery rolls coated with a honey butter and lightly sprinkled with kosher salt. If you love my cinnamon rolls but would like a more savory delight, the Parker House Rolls are perfect for you! They are a great accompaniment for your holiday meal",
   price: "$36/dozen",
-  formerPrice: "$42/dozen"
+  formerPrice: ""
 }
 const IcSugarCookie = {
   imgWide: horizontalSugarCookies,
@@ -138,7 +139,7 @@ const IcSugarCookie = {
   category: "cookie",
   title: "Sugar Cookie",
   children:
-    "Thick but soft, buttery sugar cookies decorated with a generous layer of royal icing. I offer high customizability with sugar cookies include college cookies, graduation cookies, or other various themes!",
+    "Thick and soft, buttery sugar cookies decorated with a generous layer of royal icing. I offer high customizability with sugar cookies including college logos, graduation, baby, bridal shower, and other themes. Let's discuss how to put your company's logo on a cookie!",
   price: "Prices Vary"
 }
 

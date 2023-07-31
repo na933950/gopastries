@@ -19,6 +19,7 @@ import horizontalTedX from "./horizontalTedX.jpg";
 import horizontalPrescriptionCookie from "./horizontalPrescriptionCookie.jpg";
 import horizontalPrideMonth from "./horizontalPrideMonth.jpg";
 import horizontalWedding from "./horizontalWedding.jpg";
+import horizontalMacaronBox from "./horizontalMacaronBox.jpeg";
 
 export {
   horizontalCupcakeFlowerBouquet,
@@ -41,5 +42,6 @@ export {
   horizontalTedX,
   horizontalPrescriptionCookie,
   horizontalPrideMonth,
-  horizontalWedding
+  horizontalWedding,
+  horizontalMacaronBox
 };

@@ -1,5 +1,3 @@
-@import url(https://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
-
 /* Parallax container */
 .parallaxContainer {
   position: relative;
@@ -41,7 +39,8 @@
 
 /* Text styles */
 .text {
-  font-family: "COCOGOOSE";
+  font-family: var(--font-accent);
+  font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
