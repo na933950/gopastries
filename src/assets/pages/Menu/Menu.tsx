@@ -8,7 +8,13 @@ import { allItems } from "../../globalComponents/ItemCard/items";
 import { useState } from "react";
 
 const Menu = () => {
-  const categories = ["All Categories", "Macaron", "Cookie", "Bread", "Cupcake"];
+  const categories = [
+    "All Categories",
+    "Macaron",
+    "Cookie",
+    "Bread",
+    "Cupcake",
+  ];
   const [selectedCategory, setSelectedCategory] = useState("All Categories");
   const [search, setSearch] = useState("");
 
@@ -20,14 +26,16 @@ const Menu = () => {
     setSearch(query);
   };
 
-
   return (
     <>
       <Navbar pages={pageDirectory}></Navbar>
       <div className={styles.container}>
         <div className={styles.infoContainer}>
           <span className={styles.header}>Our Menu</span>
-          <p className={styles.paragraph}>All items are processed on shared equipment with Milk, Tree nuts, Fish, Soybean, Egg, What, Crustaceans, Sesame, and Peanuts</p>
+          <p className={styles.paragraph}>
+            All items are processed on shared equipment with Milk, Tree nuts,
+            Fish, Soybean, Egg, Wheat, Crustaceans, Sesame, and Peanuts
+          </p>
         </div>
         <div className={styles.filterContainer}>
           <input
