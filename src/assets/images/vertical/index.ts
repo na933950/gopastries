@@ -10,6 +10,7 @@ import verticalJarOfHearts from "./verticalJarOfHearts.jpg";
 import verticalSugarCookies from "./verticalChristmasCookies.jpg";
 import verticalCupcakes from "./verticalCupcake.jpg";
 import verticalCinnamonRolls from "./verticalCinnamonRolls.jpg";
+import verticalFounder from "./verticalFounderPhoto.jpeg";
 
 export {
   verticalMacaron,
@@ -23,5 +24,6 @@ export {
   verticalNumberCake,
   verticalParkerHouseRoll,
   verticalSugarCookies,
-  verticalCinnamonRolls
+  verticalCinnamonRolls,
+  verticalFounder
 };
