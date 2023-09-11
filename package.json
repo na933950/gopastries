@@ -23,7 +23,7 @@
     "react-icons": "^4.10.1",
     "react-native-linear-gradient": "^2.7.3",
     "react-parallax-tilt": "^1.7.154",
-    "react-router-dom": "^6.14.1",
+    "react-router-dom": "^6.15.0",
     "react-scroll-parallax": "^3.4.2",
     "react-scrollama": "^2.3.2",
     "react-simple-typewriter": "^5.0.1",
@@ -31,8 +31,9 @@
     "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/webpack": "^5.28.2",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-react": "^4.0.1",

@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -32,6 +32,7 @@ const router = createBrowserRouter([
   }
 ]);
 
+// @ts-ignore
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ParallaxProvider>
