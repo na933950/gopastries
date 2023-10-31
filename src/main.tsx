@@ -32,7 +32,9 @@ const router = createBrowserRouter([
   }
 ]);
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
+// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ParallaxProvider>
